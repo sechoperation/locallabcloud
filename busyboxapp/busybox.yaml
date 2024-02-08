@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-sleep
+spec:
+  containers:
+    - name: busybox-sleep-container
+      image: busybox
+      command: ["sleep"]
+      args: ["3d"]
